@@ -25,7 +25,8 @@ roslaunch aruco_detection_yolo takePictures.launch target:=aruco04  pictures:=50
 Donde target es el nombre del codigo qr, pictures la cantidad de fotos que se desa tomar y start es la id inicial con la que se guardara las fotos
 ### Ejecutar yolo4
 roslaunch aruco_detection_yolo yoloNet.launch  
-
+## Ejecutar solo modelo yolo4 con opencv
+Seguir el tutorial https://www.youtube.com/watch?v=Sx_HioMUtiY con la configuracion y los weights de la carpeta src/yoloNet
 
 
 
