@@ -1,0 +1,13 @@
+<launch>
+
+
+    <group >
+        <include file="$(find aruco_detection_yolo)/launch/camera.launch">
+        </include>
+    </group>
+    <!--
+    <node pkg="aruco_detection_yolo" name="yolo4_net" type="yoloNet.py">
+
+    </node>
+    -->
+</launch>

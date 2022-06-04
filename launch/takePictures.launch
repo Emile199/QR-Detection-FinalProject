@@ -1,0 +1,18 @@
+<launch>
+
+  <arg name="target" /> 
+  <arg name="pictures" /> 
+  <arg name="start" /> 
+
+    <group >
+        <include file="$(find aruco_detection_yolo)/launch/camera.launch">
+        </include>
+    </group>
+    
+    <node pkg="aruco_detection_yolo" name="takePictures" type="takePictures.py" output="screen" >
+        <param name="target"    value="$(arg target)"/>
+        <param name="pictures"  value="$(arg pictures)"/>
+        <param name="start"     value="$(arg start)"/>
+
+    </node>
+</launch>

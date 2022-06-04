@@ -1,0 +1,13 @@
+<launch>
+    <group >
+        <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+            <arg name="device_type" value="d435"/>
+            <arg name="initial_reset" value="true"/>
+            <arg name="clip_distance" value="3"/>
+        </include>
+    </group>
+    
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find aruco_detection_yolo)/rviz/rviz_camera.rviz"/>
+
+    
+</launch>
